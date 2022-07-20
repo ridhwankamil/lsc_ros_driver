@@ -3,10 +3,10 @@ This ROS Driver is for Autonics LSC-C Series
 
 ### Table of Contents
 
-- [Supported Hardware](1.-supported-hardware)
-- [ROS API](2.-ROS-API)
-- [Build](3.-Build)
-- [Start](4.-Start)
+- [Supported Hardware](#1-supported-hardware)
+- [ROS API](#2-ros-api)
+- [Build](#3-build)
+- [Start](#4-start)
 
 
 ### 1. Supported Hardware
