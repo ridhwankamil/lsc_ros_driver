@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>lsc_ros_driver</name>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <description>ROS driver package for LSC-C Series</description>
-  <author email="wkkim@autonics.com">wkkim</author>
-  <maintainer email="wkkim@autonics.com">wkkim</maintainer>
+  <author email="lidar-ros@autonics.com">Autonics-lidar</author>
+  <maintainer email="lidar-ros@autonics.com">Autonics-lidar</maintainer>
   <license>BSD</license>
   <url type="website">https://wiki.ros.org/lsc_ros_driver</url>
   <url type="repository">https://github.com/AutonicsLiDAR/lsc_ros_driver</url>
