@@ -22,7 +22,7 @@ This ROS Driver is for Autonics LSC Series
 * self_test(self_test::Testrunner) : checking communication connection
 #### 2.3. Parameters
 * addr(default : 192.168.0.1, type : string) - The device ip address
-* port(default : 8000, type : int) - The port number of device
+* port(default : 8000, type : string) - The port number of device
 * frame_id(default : laser, type : string) - The frame name of scan data
 * range_min(default : 0.05, type : double) - Minimum range value [m]
 * range_max(default : 25.0, type : double) - Maximum range value [m]
