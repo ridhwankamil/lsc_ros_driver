@@ -37,6 +37,7 @@ This ROS Driver is for Autonics LSC Series
     git clone https://github.com/AutonicsLiDAR/lsc_ros_driver.git
     cd ~/catkin_ws
     catkin_make
+    source ~/catkin_ws/devel/setup.bash
     
 ####   3.2 from binary
     sudo apt install ros-<distro>-lsc-ros-driver
