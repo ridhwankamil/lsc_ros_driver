@@ -40,7 +40,7 @@ This ROS Driver is for Autonics LSC Series
     source ~/catkin_ws/devel/setup.bash
     
 ####   3.2 from binary
-    sudo apt install ros-<distro>-lsc-ros-driver
+    sudo apt install ros-$ROS_DISTRO-lsc-ros-driver
 
 
 ### 4. Start
