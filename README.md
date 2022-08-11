@@ -32,7 +32,7 @@ This ROS Driver is for Autonics LSC Series
 ### 3. Installation
 ####   3.1 from source
     source /opt/ros/<rosdistro>/setup.bash
-    makdir -p ~/catkin_ws/src/
+    mkdir -p ~/catkin_ws/src/
     cd ~/catkin_ws/src/
     git clone https://github.com/AutonicsLiDAR/lsc_ros_driver.git
     cd ~/catkin_ws
