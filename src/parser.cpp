@@ -240,9 +240,9 @@ void Parser::parsingMsg(std::vector<unsigned char> raw_msg, sensor_msgs::LaserSc
                 std::cout << "Angle resolution : " << lsc->scan_mea.angle_resol << std::endl;
                 std::cout << "Amount of data : " << lsc->scan_mea.amnt_of_data << std::endl;
                 #endif
-
-                msg->angle_min = lsc->scan_mea.angle_begin / 10000.0 * DEG2RAD;
-                msg->angle_max = (lsc->scan_mea.angle_begin / 10000.0 + (lsc->scan_mea.angle_resol / 10000.0 * lsc->scan_mea.amnt_of_data)) * DEG2RAD;
+                
+                msg->angle_min = ((lsc->scan_mea.angle_begin / 10000.0)-90) * DEG2RAD;
+                msg->angle_max = (((lsc->scan_mea.angle_begin / 10000.0)-90) + (lsc->scan_mea.angle_resol / 10000.0 * (lsc->scan_mea.amnt_of_data-1))) * DEG2RAD;
                 msg->angle_increment = lsc->scan_mea.angle_resol / 10000.0 * DEG2RAD;
                 msg->time_increment = (60.0 / lsc->scan_mea.meas_freq) / lsc->scan_mea.scan_counter;
                 msg->scan_time = (60.0 / lsc->scan_mea.meas_freq); 
