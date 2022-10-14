@@ -310,6 +310,7 @@ int AutoLaser::laserInit(void)
 
 int AutoLaser::run(void)
 {
+    ros::Rate rate(100);
     self_test::TestRunner self_test;
 
     self_test.setID("self_test");
@@ -341,6 +342,7 @@ int AutoLaser::run(void)
         watchingDisconnection();
 
         ros::spinOnce();
+        rate.sleep();
     }
 
     return 0;
